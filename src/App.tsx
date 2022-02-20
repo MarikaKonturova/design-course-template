@@ -1,24 +1,30 @@
 import React from 'react';
 import logo from './logo.svg';
-import './App.css';
+import './styles/css/style.css';
+import {Intro } from './components/Intro'
+import {Course} from './components/Course'
+import {Inspired} from './components/Inspired'
+import {Offers} from './components/Offers'
+import {Duration} from './components/Duration'
+import {Weeks} from './components/Weeks'
+import {Apuff} from './components/Apuff'
+import {Decor} from './components/Decor'
+import {Quote} from './components/Quote'
+import {Subscribe} from './components/Subscribe'
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <Intro/>
+    <Course/>
+    <Inspired/>
+    <Offers/>
+    <Duration/>
+    <Weeks/>
+    <Apuff/>
+    <Decor/>
+    <Quote/>
+    <Subscribe/>
     </div>
   );
 }

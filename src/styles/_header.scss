@@ -1,0 +1,14 @@
+.header {
+  height: 9rem;
+  width: $minWidth;
+  margin: auto;
+  @include flex(space-between, center, row);
+  h1 {
+    font-size: 4rem;
+    font-family: $logoFont;
+    font-weight: 400;
+    color: $blok1-color;
+    align-self: flex-end;
+    padding-bottom: 2rem;
+  }
+}

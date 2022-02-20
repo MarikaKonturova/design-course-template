@@ -1,0 +1,35 @@
+.quote {
+  min-height: 90vh;
+  background: #3f3d56;
+  padding: 2.5rem 0;
+  display: flex;
+}
+.quote-wrapper {
+  align-self: center;
+  width: $minWidth;
+  margin: auto;
+  background: #524e7e;
+  box-sizing: border-box;
+  padding: 3.2rem 3.7rem 2.2rem 3.7rem;
+  @include flex(space-between, center, column);
+  color: #fff;
+  font-family: $vietnam;
+  font-weight: 600;
+  h1 {
+    text-transform: uppercase;
+    font-size: 2.1rem;
+    letter-spacing: 0.43rem;
+    padding-bottom: 6.8rem;
+  }
+  p {
+    font-weight: 200;
+    font-size: 2rem;
+    letter-spacing: -0.05rem;
+    line-height: 2.8rem;
+    padding-bottom: 6.8rem;
+  }
+  button {
+    align-self: left;
+    margin-bottom: 6.2rem;
+  }
+}

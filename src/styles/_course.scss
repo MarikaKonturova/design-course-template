@@ -1,0 +1,49 @@
+.course {
+  height: 100vh;
+  background: #3f3d56;
+  padding: 2.5rem 0;
+  display: flex;
+}
+.course-wrapper {
+  align-self: center;
+  width: $minWidth;
+  margin: auto;
+  background: $blok2_1-color;
+  box-sizing: border-box;
+  padding: 3.2rem 4.7rem 2.2rem 4.7rem;
+  @include flex(center, center, column);
+
+  text-align: center;
+  font-family: $vietnam;
+  font-weight: 600;
+  text-transform: uppercase;
+  h2 {
+    padding-bottom: 7.8rem;
+    font-size: 2.7rem;
+    line-height: 3.7rem;
+    letter-spacing: 0.4rem;
+  }
+  h1 {
+    padding-bottom: 4rem;
+
+    font-size: 2.5rem;
+    font-weight: 800;
+    line-height: 4.2rem;
+  }
+  button {
+    align-self: center;
+    margin-bottom: 6.2rem;
+  }
+}
+.course-details {
+  @include flex(center, flex-start, column);
+  p {
+    padding-bottom: 3.2rem;
+    font-size: 1.2rem;
+    letter-spacing: 0.2rem;
+  }
+  h3 {
+    font-size: 1.6rem;
+    padding-bottom: 4.3rem;
+  }
+}

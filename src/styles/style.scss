@@ -1,0 +1,41 @@
+@import "fonts";
+@import "icons";
+@import "global";
+// FONTS
+$logoFont: "Mervale", sans-serif;
+$vietnam: "Be Vietnam Pro", sans-serif;
+$prompt: "Prompt", sans-serif;
+// MEDIA QUERIES
+$minWidth: 320px;
+$maxWidth: 843px;
+$maxWidthContainer: 320px;
+$md1: $maxWidthContainer + 12px;
+$md2: 991.98px;
+$md3: 767.98px;
+$md4: 479.98px;
+// COLORS
+$bg-color: #e5e5e5e5;
+$bg2-color: #efefef;
+$white-color: #ffffff;
+$blok1-color: #1b5ad3;
+$blok2-color: #555555;
+$blok2_1-color: #efefef;
+$block2_2-color: #524e7e;
+//MIXINS
+@mixin flex($justify, $align, $direction) {
+  display: flex;
+  justify-content: $justify;
+  align-items: $align;
+  flex-direction: $direction;
+}
+//COMPONENTS
+@import "intro";
+@import "header";
+@import "course";
+@import "inspired";
+@import "block";
+@import "duration";
+@import "weeks";
+@import "decor";
+@import "quote";
+@import "subscribe";

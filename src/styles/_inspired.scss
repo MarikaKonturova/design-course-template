@@ -1,0 +1,42 @@
+.inspired {
+  box-sizing: border-box;
+  height: 100vh;
+  background-image: url("../../assets/img/hotel-wallpaper.jpg");
+  background-repeat: repeat;
+  padding: 12.9rem 7.1rem 9.2rem 7.1rem;
+  @include flex(flex-start, center, column);
+  h2 {
+    margin: 1.8rem 0;
+    font-family: $vietnam;
+    font-weight: 700;
+    font-size: 1.7rem;
+    text-transform: uppercase;
+  }
+}
+.inspired-block {
+  height: 22.3rem;
+  width: 22.3rem;
+  background: $blok2_1-color;
+  text-align: center;
+  @include flex(center, space-around, column);
+  row-gap: 4.2rem;
+
+  h1 {
+    letter-spacing: 0.6rem;
+    text-transform: uppercase;
+
+    color: $blok1-color;
+    font-family: "Asap Condensed", sans-serif;
+    font-size: 2.4rem;
+    font-weight: 700;
+    line-height: 2.75rem;
+  }
+  p {
+    color: #686666;
+    padding: 0 0.5rem;
+    font-family: $prompt;
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 2.16rem;
+  }
+}
