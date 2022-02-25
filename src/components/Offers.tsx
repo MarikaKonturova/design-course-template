@@ -1,7 +1,7 @@
 import React from "react";
 export function Offers() {
   return (
-    <section className="block">
+    <section className="block offers">
       <div className="wrapper">
       <h1>Courses offers</h1>
       <div className="group offers-group">

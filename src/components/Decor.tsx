@@ -8,11 +8,13 @@ import pagenum from "../assets/icons/decor/pagenum.svg";
 export function Decor() {
   return (
     <section className="decor">
-      <img src={mobile} alt="mobile" className={`decor_icon mobile`} />
-      <img src={cart} alt="cart" className={`decor_icon cart`} />
-      <img src={news} alt="news" className={`decor_icon news`} />
-      <img src={blog} alt="blog" className={`decor_icon blog`} />
-      <img src={pagenum} alt="pagenum" className={`decor_icon pagenum`} />
+      <div className="relative">
+        <img src={mobile} alt="mobile" className={`decor_icon mobile`} />
+        <img src={cart} alt="cart" className={`decor_icon cart`} />
+        <img src={news} alt="news" className={`decor_icon news`} />
+        <img src={blog} alt="blog" className={`decor_icon blog`} />
+        <img src={pagenum} alt="pagenum" className={`decor_icon pagenum`} />
+      </div>
     </section>
   );
 }

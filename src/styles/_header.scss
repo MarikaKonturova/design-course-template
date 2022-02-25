@@ -1,7 +1,8 @@
 .header {
-  height: 9rem;
-  width: $minWidth;
-  margin: auto;
+  top: 0;
+  width: 85%;
+  min-height: 9rem;
+  align-self: center;
   @include flex(space-between, center, row);
   h1 {
     font-size: 4rem;
@@ -10,5 +11,115 @@
     color: $blok1-color;
     align-self: flex-end;
     padding-bottom: 2rem;
+  }
+  img {
+    width: 3rem;
+  }
+}
+.nav__list {
+  display: flex;
+  align-items: center;
+}
+.nav__button {
+  background-color: transparent;
+  background-repeat: no-repeat;
+  border: 1.5px solid #1b5ad3;
+  border-radius: 0.18rem;
+  color: $blok1-color;
+  outline: none;
+}
+
+@media screen and (max-width: 767px) {
+  .header {
+    min-height: 9rem;
+  }
+  .nav__menu {
+    position: fixed;
+    width: 100%;
+    background: #fff;
+    top: 0%;
+    left: 0;
+    padding: 3.5rem 0;
+    transition: 0.4s;
+    z-index: 99;
+    border-radius: 0 0 1.5rem 1.5rem;
+    a {
+      text-decoration: none;
+      font-size: 3rem;
+      font-family: $vietnam;
+      font-weight: 400;
+      color: black;
+      align-self: flex-end;
+      padding-bottom: 2rem;
+    }
+    li {
+      list-style-type: none;
+    }
+  }
+  .nav__list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 1rem;
+  }
+  .nav__close {
+    position: absolute;
+    top: 6rem;
+    left: 1rem;
+    cursor: pointer;
+    img {
+      width: 3rem;
+    }
+  }
+  .nav__button-div {
+   display: none;
+  }
+}
+@media screen and (min-width: 767px) {
+  .header {
+    @include flex(space-around, center, row);
+    h1 {
+      font-size: 5rem;
+      flex: 3;
+      margin-right: 2rem;
+    }
+    
+  }
+  @media screen and (min-width: 1600px) {
+    .header{
+      width: 72%;
+    @include flex(space-around, center, row);
+
+    }
+  }
+  .nav__button-div {
+    flex: 6;
+    @include flex(flex-end, center, row);
+  }
+  .nav__menu {
+    flex: 3;
+    li {
+      list-style-type: none;
+    }
+    a {
+      text-decoration: none;
+      font-size: 2.5rem;
+      font-family: $vietnam;
+      font-weight: 400;
+      color: black;
+      align-self: flex-end;
+      padding-bottom: 2rem;
+    }
+  }
+  .menu-icon {
+    display: none;
+  }
+  .nav__list {
+    flex-direction: row;
+    column-gap: 3rem;
+  }
+
+  .nav__link {
+    text-transform: initial;
   }
 }

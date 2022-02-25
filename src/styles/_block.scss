@@ -1,5 +1,7 @@
+
 .block {
-  height: 100vh;
+  height: 100%;
+
   background: $blok1-color;
 }
 .wrapper {
@@ -32,4 +34,21 @@
 .button-block {
   margin-left: 2.3rem;
   margin-bottom: 11.7rem;
+}
+@media screen and (min-width: 1294px) {
+  .group{
+    width: 70%;
+    margin: auto;
+    @include flex(center, center, column);
+    text-align: center;
+    p{
+    font-size: 2.5rem;
+
+    }
+  
+  }
+  .button-block{
+    align-self: center;
+    margin: 0;
+  }
 }

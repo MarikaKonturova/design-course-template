@@ -1,6 +1,6 @@
 .decor {
-  box-sizing: border-box;
   min-height: 90vh;
+  box-sizing: border-box;
   background-image: url("../../assets/img/hotel-wallpaper.jpg");
   background-repeat: repeat;
   position: relative;
@@ -32,4 +32,19 @@
   position: absolute;
   left: 7rem;
   top: 48.7rem;
+}
+
+@media screen and (min-width: 1000px) {
+ 
+  .relative{
+    width: 80%;
+    margin: auto;
+    position: relative;
+  }
+
+}
+@media screen and (min-width: 1400px) {
+  .decor_icon {
+    width: 6rem;
+  }
 }

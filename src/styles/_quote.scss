@@ -1,17 +1,20 @@
 .quote {
   min-height: 90vh;
+  
   background: #3f3d56;
   padding: 2.5rem 0;
   display: flex;
 }
 .quote-wrapper {
+  min-height: 90vh;
+
   align-self: center;
-  width: $minWidth;
+  width: 85%;
   margin: auto;
   background: #524e7e;
   box-sizing: border-box;
   padding: 3.2rem 3.7rem 2.2rem 3.7rem;
-  @include flex(space-between, center, column);
+  @include flex(space-around, flex-start, column);
   color: #fff;
   font-family: $vietnam;
   font-weight: 600;
@@ -23,7 +26,7 @@
   }
   p {
     font-weight: 200;
-    font-size: 2rem;
+    font-size: 2.3rem;
     letter-spacing: -0.05rem;
     line-height: 2.8rem;
     padding-bottom: 6.8rem;
@@ -32,4 +35,56 @@
     align-self: left;
     margin-bottom: 6.2rem;
   }
+}
+@media screen and (min-width: 616px) and (max-width: 734px){
+  .quote-wrapper{
+   
+    
+    p{
+      font-size: 2.2rem;
+    
+      line-height: 3.4rem;
+    }
+    button{
+      font-size: 1.5rem;
+    }
+  }
+  
+}
+
+@media screen and (min-width: 734px) and (max-width: 1440px){
+  .quote-wrapper{
+    padding: 0 10rem;
+    h1{
+      font-size: 2.3rem;
+    }
+    p{
+      font-size: 2.5rem;
+     
+      line-height: 4.4rem;
+    }
+    button{
+      font-size: 2rem;
+    }
+  }
+  
+}
+
+@media screen and (min-width: 1400px) {
+  .quote-wrapper{
+    padding: 0 10rem;
+    align-items: flex-start;
+    h1{
+      font-size: 3.1rem;
+    }
+    p{
+      font-size: 3.7rem;
+      width: 80%;
+      line-height: 5.4rem;
+    }
+    button{
+      font-size: 2rem;
+    }
+  }
+  
 }

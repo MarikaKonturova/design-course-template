@@ -28,6 +28,39 @@ $block2_2-color: #524e7e;
   align-items: $align;
   flex-direction: $direction;
 }
+@media screen and (min-width: 730px) {
+ 
+  .inspired {
+    grid-area: a;
+  }
+  .offers {
+    grid-area: b;
+  }
+  .duration {
+    grid-area: c;
+  }
+  .weeks {
+    grid-area: d;
+  }
+  .decor {
+    grid-area: e;
+  }
+  .apuff {
+    grid-area: f;
+  }
+  .grid-group {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows:repeat(3, 1fr) ;
+    gap: 0px 0px;
+    grid-template-areas:
+      "a b"
+      "c d"
+      "e f";
+  }
+}
+
 //COMPONENTS
 @import "intro";
 @import "header";
@@ -39,3 +72,4 @@ $block2_2-color: #524e7e;
 @import "decor";
 @import "quote";
 @import "subscribe";
+@import "footer";

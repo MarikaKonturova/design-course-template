@@ -1,14 +1,12 @@
 .intro {
-  height: 100vh;
-  @include flex(center, center, column);
+  min-height: 100vh;
+  @include flex(center, flex-start, column);
   padding-bottom: 24rem;
   background-image: url("../../assets/img/hotel-wallpaper.jpg");
   background-repeat: repeat;
 }
 
 .intro-main {
-  width: 94%;
-  margin: auto;
   padding-top: 15.5rem;
   padding-bottom: 6.4rem;
   h3 {
@@ -60,4 +58,33 @@
   margin-top: 6.4rem;
   display: block;
   background: $blok1-color;
+}
+@media screen and (min-width: 767px) {
+  .intro-group {
+    align-self:center;
+    width: 85%;
+    @include flex(space-between, center, row);
+  }
+}
+@media screen and (min-width: 1600px) {
+  .intro{
+    justify-content: space-around;
+  }
+  .intro-group {
+    align-self:center;
+    width: 85%;
+    @include flex(space-around, center, row);
+    img{
+      width: 50%;
+    }
+  }
+}
+@media screen and (max-width: 967px) {
+  .intro-group {
+    align-self: center;
+    @include flex(center, center, row);
+    img {
+      display: none;
+    }
+  }
 }

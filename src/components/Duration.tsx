@@ -2,7 +2,7 @@ import React from "react";
 
 export function Duration() {
   return (
-    <section id='duration-block' className="block ">
+    <section id='duration-block' className="block duration ">
       <div className="wrapper">
         <h1>Apuff duration</h1>
         <div className="group duration-group">

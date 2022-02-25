@@ -1,12 +1,12 @@
 .course {
-  height: 100vh;
+  min-height: 100vh;
   background: #3f3d56;
   padding: 2.5rem 0;
   display: flex;
 }
 .course-wrapper {
-  align-self: center;
-  width: $minWidth;
+  min-height: 90vh;
+  width: 85%;
   margin: auto;
   background: $blok2_1-color;
   box-sizing: border-box;
@@ -35,15 +35,60 @@
     margin-bottom: 6.2rem;
   }
 }
-.course-details {
-  @include flex(center, flex-start, column);
-  p {
-    padding-bottom: 3.2rem;
-    font-size: 1.2rem;
-    letter-spacing: 0.2rem;
+
+.course-details-1, .course-details-2{
+    p {
+      padding-bottom: 3.2rem;
+      font-size: 1.2rem;
+      letter-spacing: 0.2rem;
+    }
+    h3 {
+      font-size: 1.6rem;
+      padding-bottom: 4.3rem;
+    }
   }
-  h3 {
-    font-size: 1.6rem;
-    padding-bottom: 4.3rem;
+@media screen and (max-width: 340px) {
+  .course-details {
+    @include flex(center, flex-start, column);
+   
+  }
+  .course-details-1, .course-details-2{
+  @include flex(center, flex-start, column);
+  }
+}
+@media screen and (min-width:340px) and (max-width: 666px) {
+  .course-details {
+    @include flex(center, center, column);
+   
+  }
+  .course-details-1, .course-details-2{
+  @include flex(center,center, column);
+  }
+}
+@media  screen and (min-width: 666px) {
+  .course-details {
+    width: 100%;
+    @include flex(space-between, center, row);
+
+  }
+  .course-details-1, .course-details-2{
+    @include flex(center, flex-start, column);
+    }
+}
+@media  screen and (min-width:1100px) {
+  .course-wrapper{
+    h2 {
+      font-size: 4rem;
+    }
+    h1 {
+      font-size: 5rem;
+    }
+    p, h3{
+      font-size: 2.7rem;
+    }
+    button {
+      font-size: 2.5rem;
+    }
+  
   }
 }

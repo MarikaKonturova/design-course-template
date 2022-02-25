@@ -1,7 +1,7 @@
 .weeks {
-  min-height: 100vh;
-  padding: 7.7rem 0;
-  @include flex(center, center, column);
+  
+  padding: 4.7rem 0;
+  @include flex(space-around, center, column);
   background-image: url("../../assets/img/hotel-wallpaper.jpg");
   background-repeat: repeat;
 }
@@ -9,11 +9,13 @@
   display: flex;
   flex-direction: column;
   img {
+    padding-top: 0.2rem;
     align-self: center;
+    width: 0.8rem;
   }
 }
 .week-info {
-  height: 10.8rem;
+  height: 9.8rem;
   width: 18.7rem;
   background-color: #e5e5e5;
   @include flex(space-evenly, inherit, column);
@@ -34,3 +36,5 @@
   text-align: center;
   width: 32.5rem;
 }
+
+

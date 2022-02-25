@@ -1,7 +1,7 @@
 import React from "react";
 export function Apuff() {
   return (
-    <section className="block">
+    <section className="block apuff">
       <div className="wrapper">
       <h1>Apuff e-project</h1>
       <div className="group offers-group">
